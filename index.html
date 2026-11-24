@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, interactive-widget=resizes-content" />
+    <meta name="color-scheme" content="light dark" />
+    <meta http-equiv="Content-Security-Policy"
+          content="default-src 'self'; script-src 'self' 'wasm-unsafe-eval' 'sha256-rDOZ/nG+WAm8pwREdbmDqd/b1S16fwJnvtSXtzpM6s4='; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://tile.openstreetmap.org https://*.tile.openstreetmap.org https://mt0.google.com https://mt1.google.com https://mt2.google.com https://mt3.google.com; font-src 'self' data:; connect-src 'self' https: wss: ws:; worker-src 'self' blob:; object-src 'none'; base-uri 'none'; form-action 'none'" />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+    <link rel="manifest" href="./manifest.webmanifest" />
+    <link rel="icon" href="./assets/brand/niji-dark.png" type="image/png" />
+    <link rel="alternate icon" href="./assets/icons/favicon-32.png" sizes="32x32" />
+    <link rel="apple-touch-icon" href="./assets/icons/apple-touch-icon.png" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-title" content="nijip2p" />
+    <meta name="application-name" content="nijip2p" />
+    <meta name="theme-color" content="#f5f6f3" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#0e1013" media="(prefers-color-scheme: dark)" />
+    <title>nijip2p: escrowed P2P trading - Remote &amp; In-Person</title>
+    <meta name="description" content="nijip2p is a peer-to-peer trading app for USDC and USDT. The contract holds the seller's stablecoins in escrow - remote payments and in-person cash - and disputes get one binary ruling from an on-chain court. Non-custodial, no account, no wallet connection." />
+    <script>
+      // Theme bootstrap before first paint — no flash of the wrong theme.
+      try {
+        var t = localStorage.getItem("nijip2p-theme");
+        if (t !== "light" && t !== "dark") t = matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+        document.documentElement.dataset.theme = t;
+      } catch (e) {}
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script src="./heal.js"></script>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

@@ -1,0 +1,8 @@
+{
+ "NijiDeal": {
+  "file": "src/NijiDeal.sol"
+ },
+ "NijiCourt": {
+  "file": "src/NijiCourt.sol"
+ }
+}

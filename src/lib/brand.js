@@ -1,0 +1,2 @@
+export const BRAND = "nijip2p";
+export const BRAND_ACCOUNT_CODE_HINT = "NP-XXXX-XXXX-XXXX-XXXX-XXXX-XXXX-XXXX";

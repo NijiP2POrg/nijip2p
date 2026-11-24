@@ -1,0 +1,38 @@
+{
+  "network": "mainnet",
+  "chainId": 56,
+  "mode": "mainnet",
+  "rpcUrl": "https://bsc-dataseed.bnbchain.org",
+  "simplexBotPubkey": "fb3fc65cf59858affe4b0e40809139a63e23230b235d4e7ba8cfc7f7fef9015f",
+  "social": {
+    "chat": "https://smp16.simplex.im/g#_A1ZdzPU_kAaeqNasjkX7nnXmb45aYnNpf-jaIzw0HQ",
+    "github": "https://github.com/NijiP2POrg",
+    "x": "https://x.com/NijiP2POrg",
+    "simplex": "https://smp18.simplex.im/a#i-tI1wUen8eUSpqvIR3jemFzAygtqMym6WG98kUGrHY",
+    "telegram": "https://t.me/nijip2porg"
+  },
+  "relays": [
+    "wss://relay.nijip2p.me/nostr"
+  ],
+  "usdc": "0x8AC76a51cc950d9822D68b83fE1Ad97B32Cd580d",
+  "usdt": "0x55d398326f99059fF775485246999027B3197955",
+  "deal": "0xe0c15288dd4e2abb4b362ffe9663d92c36b37147",
+  "court": "0x675ab5fccc672a9c450847b140169ef0e76eab1b",
+  "arbiter": "0x936092A84f3ceFB4fa4C2BeCefAaf242d2A32B70",
+  "deployer": "0xe16a48309a09d14A49a1F489033a12cF4066b466",
+  "telegramApiUrl": "https://app.nijip2p.me/tg",
+  "readRpcUrl": "https://bsc-dataseed.bnbchain.org",
+  "rpcUrls": [
+    "https://bsc-dataseed.binance.org",
+    "https://bsc-rpc.publicnode.com"
+  ],
+  "deployBlock": 132628790,
+  "multicall": "0xcA11bde05977b3631167028862bE2a173976CA11",
+  "supabaseUrl": "https://weczokpdhaoqyyypkmyc.supabase.co",
+  "supabaseAnonKey": "sb_publishable_t0ev-oT-8qe3oMWFsFu3DA_5dpekrwt",
+  "dbPollIntervalMs": 4000,
+  "pollIntervalMs": 30000,
+  "pageSize": 50,
+  "maxBlocksPerSync": 5000,
+  "lookbackBlocks": 50000
+}
